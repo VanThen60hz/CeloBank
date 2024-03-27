@@ -4,6 +4,13 @@ html {
 }
 
 :root {
+    /* color */
+    --nav-link-color: #696d76;
+    --heading-color: #212832;
+
+    /* background */
+
+    /* font */
     --primary-font: "Open Sans", sans-serif;
 }
 
@@ -21,4 +28,122 @@ button {
     /* To make font-size, font-family inherit in this html tag */
     font-size: inherit;
     font-family: inherit;
+}
+
+/* Common */
+.container {
+    /* Box model */
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    /* Variable */
+    --height: 58px;
+
+    /* Flex box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Box model */
+    width: 149px;
+    height: var(--height);
+    border-radius: 8px;
+
+    /* Color */
+    color: #fff;
+    background: #212832;
+
+    /* Text */
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+/* Header */
+.header {
+    /* Box model */
+    padding: 42px 0 20px;
+    background: #fff;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -22px;
+}
+
+.header__inner {
+    /* Flex box */
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    /* Box model */
+    width: 102.68px;
+    height: 24px;
+}
+
+.navbar {
+    /* Box model */
+    margin-left: 70px;
+}
+
+.navbar__list {
+    /* Flex box */
+    display: flex;
+    column-gap: 47px;
+}
+
+.navbar__link {
+    color: var(--nav-link-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.navbar__link--active,
+.navbar__link:hover {
+    color: var(--heading-color);
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action {
+    /* Flex box */
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+
+    /* Box model */
+    margin-left: auto;
+}
+
+.header-action__link {
+    /* Color */
+    color: var(--heading-color);
+
+    /* Text */
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.header-action__link:hover {
+    /* Text */
+    text-decoration: underline;
+}
+
+.header-action__btn {
+    /* Variable */
+    --height: 52px;
+
+    /* Box model */
+    max-width: 113px;
+}
+
+.header-action__btn:hover {
+    /* Visibility */
+    opacity: 0.7;
 }
