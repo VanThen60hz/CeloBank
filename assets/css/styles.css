@@ -1,0 +1,24 @@
+html {
+    /* This to set 1 rem = 10px */
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-font: "Open Sans", sans-serif;
+}
+
+body {
+    /* To set back body font is 16px */
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    font-weight: 400;
+}
+
+input,
+textarea,
+select,
+button {
+    /* To make font-size, font-family inherit in this html tag */
+    font-size: inherit;
+    font-family: inherit;
+}
