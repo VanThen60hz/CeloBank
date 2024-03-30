@@ -785,7 +785,7 @@ button {
     border-radius: 8px;
 
     /* Color */
-    background: var(--bold-color);
+    background: var(--primary-bg);
 }
 
 .card__icon-wrap {
@@ -922,4 +922,75 @@ button {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
+}
+
+.features {
+    margin-top: 160px;
+}
+
+.feature__row {
+    /* Flex box */
+    display: flex;
+    align-items: center;
+}
+
+.feature__content {
+    /* Box model */
+    width: 40%;
+}
+
+.feature__heading {
+    /* Box model */
+    margin-top: 12px;
+}
+
+.feature__desc {
+    /* Box model */
+    margin-top: 20px;
+}
+
+.feature__list {
+    /* Box model */
+    margin-top: 10px;
+}
+
+.feature__item {
+    /* Flex box */
+    display: flex;
+    align-items: center;
+
+    /* Color */
+    color: var(--heading-color);
+
+    /* Box model */
+    margin-top: 18px;
+
+    /* Text */
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.feature__item::before {
+    /* Content */
+    content: "";
+
+    /* Box model */
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+    border-radius: 50%;
+
+    /* Color */
+    background: var(--primary-bg);
+}
+
+.feature__cta {
+    /* Box model */
+    margin-top: 38px;
+}
+
+.feature__card {
+    /* Scale */
+    transform: scale(1.928);
 }
