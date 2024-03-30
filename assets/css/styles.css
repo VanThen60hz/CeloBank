@@ -25,9 +25,11 @@ html {
     --mobile-circle-02-bg: #feef65;
     --hero-interest-bg: #da6464;
     --hero-funds-bg: #439f90;
+    --congratulations-icon-wrap-bg: #4ab5e3;
 
     /* font */
     --primary-font: "Open Sans", sans-serif;
+    --secondary-font: "Inter", sans-serif;
 }
 
 body {
@@ -638,6 +640,7 @@ button {
     width: 130px;
     height: 130px;
     border-radius: 50%;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
 
     /* Color */
     background: var(--hero-interest-bg);
@@ -675,6 +678,7 @@ button {
     height: 68px;
     padding: 20px 14px;
     border-radius: 10px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
 
     /* Color */
     background: var(--hero-funds-bg);
@@ -702,5 +706,170 @@ button {
 
     /* Text */
     font-size: 0.8rem;
+    font-weight: 400;
+}
+
+/* =========== How It Works ========= */
+.works {
+    /* Box model */
+    margin-top: 160px;
+}
+
+.works__inner {
+    /* Flex box */
+    display: flex;
+    align-items: center;
+}
+
+.work__media {
+    /* Positioning */
+    position: relative;
+
+    /* Box model */
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.work__img-wrap {
+    /* Positioning */
+    position: relative;
+
+    /* Box model */
+    width: 470px;
+    height: 619px;
+}
+
+.work__img-wrap::before {
+    /* Positioning */
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    /* Box model */
+    width: 100%;
+    height: 550px;
+
+    /* Content */
+    display: block;
+    content: url(../img/work-bg.svg);
+}
+
+.work__img {
+    /* Positioning */
+    position: relative;
+    z-index: 1;
+
+    /* Box model */
+    width: 456px;
+    height: 100%;
+
+    /* Image */
+    object-fit: cover;
+}
+
+.work-decor__card {
+    /* Positioning */
+    position: absolute;
+    top: 69px;
+    left: 344px;
+
+    /* Flex box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Box model */
+    width: 69px;
+    height: 69px;
+    border-radius: 8px;
+
+    /* Color */
+    background: var(--bold-color);
+}
+
+.card__icon-wrap {
+    /* Flex box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Box model */
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+
+    /* Color */
+    background: #fff;
+}
+
+.work-decor-congratulations {
+    /* Positioning */
+    position: absolute;
+    bottom: 96px;
+    right: 0;
+    z-index: 1;
+
+    /* Flex box */
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    /* Box model */
+    width: 226px;
+    height: 70px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+
+    /* Text */
+    font-family: var(--secondary-font);
+}
+
+.congratulations__icon-wrap {
+    /* Flex box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    /* Box model */
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+
+    /* Color */
+    background: var(--congratulations-icon-wrap-bg);
+}
+
+.congratulations__icon {
+    /* Box model */
+    width: 20px;
+    height: 20px;
+    padding: 7px 4px;
+    border-radius: 50%;
+
+    /* Color */
+    background: #fff;
+}
+
+.congratulation__title {
+    /* Color */
+    color: var(--heading-color);
+
+    /* Text */
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.congratulation__desc {
+    /* Box model */
+    margin-top: 5px;
+
+    /* Color */
+    color: var(--desc-color);
+
+    /* Text */
+    font-size: 1.2rem;
     font-weight: 400;
 }
