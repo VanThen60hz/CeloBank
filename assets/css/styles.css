@@ -719,6 +719,7 @@ button {
     /* Flex box */
     display: flex;
     align-items: center;
+    column-gap: 130px;
 }
 
 .work__media {
@@ -872,4 +873,53 @@ button {
     /* Text */
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+.work__content {
+    /* declare counter with name heading */
+    /* heading = 0 */
+    counter-reset: heading;
+}
+
+.work__heading {
+    /* Box model */
+    margin: 12px 0 40px;
+}
+
+.work__title {
+    /* every meet work__title heading increase 1 */
+    counter-increment: heading;
+
+    /* Box model */
+    margin-top: 30px;
+
+    /* Color */
+    color: var(--heading-color);
+
+    /* Text */
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.work__title:first-of-type {
+    margin-top: 0;
+}
+
+.work__title::before {
+    /* Content */
+    content: counter(heading) ". ";
+}
+
+.work__desc {
+    /* Box model */
+    margin-top: 16px;
+
+    /* Color */
+    color: var(--desc-color);
+
+    /* Text */
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
 }
