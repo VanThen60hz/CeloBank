@@ -990,7 +990,162 @@ button {
     margin-top: 38px;
 }
 
+.feature__media-top {
+    /* Positioning */
+    position: relative;
+
+    /* Box model */
+    width: 49%;
+    margin-left: auto;
+}
+
 .feature__card {
     /* Scale */
     transform: scale(1.928);
+    margin-left: 120px;
+}
+
+.feature-media-send-money {
+    /* Positioning */
+    position: absolute;
+    top: -95px;
+    right: 0;
+    z-index: 1;
+
+    /* Flex box */
+    display: flex;
+    align-items: center;
+
+    /* Box model */
+    width: 276px;
+    height: 86px;
+    padding: 23px 13px;
+    border-radius: 12px;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+
+    /* Color */
+    background: #fff;
+}
+
+.send-money__icon-wrap {
+    /* Box model */
+    margin-right: 14px;
+}
+
+.send-money__icon {
+    /* Box model */
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+
+    /* Color */
+    background: rgba(218, 100, 100, 0.1);
+}
+
+.send-money__title {
+    /* Color */
+    color: var(--heading-color);
+
+    /* Text */
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.send-money__owner {
+    /* Box model */
+    margin-top: 4px;
+
+    /* Color */
+    color: var(--desc-color);
+
+    /* Text */
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.send-money__detail {
+    /* Box model */
+    margin-left: auto;
+}
+
+.send-money__number {
+    /* Color */
+    color: var(--heading-color);
+
+    /* Text */
+    text-align: right;
+    font-family: var(--secondary-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.send-money__date {
+    /* Box model */
+    margin-top: 3px;
+
+    /* Color  */
+    color: var(--desc-color);
+
+    /* Text */
+    text-align: right;
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.feature-media-income {
+    /* Positioning */
+    position: absolute;
+    bottom: -120px;
+    right: 0;
+    z-index: 1;
+
+    /* Box model */
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    border-radius: 16px;
+    background: #439f90;
+}
+
+.income__icon {
+    /* Flex box  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Box model */
+    width: 30px;
+    height: 30px;
+
+    /* Color */
+    border-radius: 8px;
+    background: #fff;
+}
+
+.income__title {
+    /* Box model */
+    margin-top: 14px;
+
+    /* Color */
+    color: #fff;
+
+    /* Text */
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.income__number {
+    /* Box model */
+    margin-top: 6px;
+
+    /* Color */
+    color: #fff;
+
+    /* Text */
+    font-size: 1.8rem;
+    font-weight: 600;
 }
