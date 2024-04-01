@@ -1349,6 +1349,15 @@ button {
     font-style: italic;
     font-weight: 400;
     line-height: 1.55;
+
+    /* Transition */
+    transition: filter 0.3s ease-in-out;
+}
+
+.client-item__feedback:hover {
+    /* Using filter instead of border */
+    -webkit-filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
 }
 
 .client-item__feedback::after {
@@ -1362,14 +1371,20 @@ button {
     content: "";
 
     /* Box model */
-    border: 33px solid;
-    transform: rotate(45deg) translateX(-80%);
-    border-color: transparent #fff #fff transparent;
-    /* Color */
+    width: 0;
+    height: 0;
+
+    /* Create rhomb */
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-top: 70px solid #fff; /* Height of rhomb with 45px (45 * sqrt(3)) and subtract unit row*/
 }
 
 .client-item__author {
     /* Box model */
+    margin-top: 36px;
+
+    /* Text */
     text-align: center;
 }
 
@@ -1424,8 +1439,16 @@ button {
     height: 6px;
     border-radius: 3px;
     border: 1px solid #9b9fab;
+
+    /* Transition */
+    transition: background-color 0.3s ease-in-out;
 }
 
+.client__dot:hover,
 .client__dot--active {
+    /* Color */
     background: var(--primary-bg);
+
+    /* User action */
+    cursor: pointer;
 }
