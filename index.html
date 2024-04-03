@@ -1192,7 +1192,7 @@
         </main>
 
         <!-- Footer -->
-        <footer class="footer" style="height: 1000px">
+        <footer class="footer">
             <div class="container">
                 <div class="footer__top">
                     <!-- Footer column 1 -->
@@ -1204,19 +1204,19 @@
                     <div class="footer__column">
                         <h3 class="footer__heading">Sitemap</h3>
                         <ul class="footer__list">
-                            <li>
+                            <li class="footer__item">
                                 <a href="#!" class="footer__link">Home</a>
                             </li>
-                            <li>
+                            <li class="footer__item">
                                 <a href="#!" class="footer__link">About</a>
                             </li>
-                            <li>
+                            <li class="footer__item">
                                 <a href="#!" class="footer__link">Growers</a>
                             </li>
-                            <li>
+                            <li class="footer__item">
                                 <a href="#!" class="footer__link">Merchants</a>
                             </li>
-                            <li>
+                            <li class="footer__item">
                                 <a href="#!" class="footer__link">Contact</a>
                             </li>
                         </ul>
@@ -1226,16 +1226,16 @@
                     <div class="footer__column">
                         <h3 class="footer__heading">Socials</h3>
                         <ul class="footer__list">
-                            <li>
+                            <li class="footer__item">
                                 <a href="#!" class="footer__link">Facebook</a>
                             </li>
-                            <li>
+                            <li class="footer__item">
                                 <a href="#!" class="footer__link">Linkedin</a>
                             </li>
-                            <li>
+                            <li class="footer__item">
                                 <a href="#!" class="footer__link">Instagram</a>
                             </li>
-                            <li>
+                            <li class="footer__item">
                                 <a href="#!" class="footer__link">Twitter</a>
                             </li>
                         </ul>
@@ -1244,15 +1244,46 @@
                     <div class="footer__column">
                         <h3 class="footer__heading">Head Office</h3>
 
-                        <p href="#!" class="footer__address"></p>
+                        <p href="#!" class="footer__address">
+                            Williams Corner Wine © 2017. 1112 A Market St # Ste
+                            B22, Charlottesville, CA 45565
+                        </p>
 
-                        <h3 class="footer__heading">News letter</h3>
+                        <h3 class="footer__heading footer__letter">
+                            News letter
+                        </h3>
 
-                        <form action="#!" class="subscribe__form">
-                            <input type="email" name="" id="" />
+                        <form action="#!" class="footer-subscribe-form">
+                            <input
+                                type="address"
+                                name="address"
+                                id="address"
+                                class="footer-subscribe__input"
+                                placeholder="Enter address..."
+                            />
+                            <button
+                                type="submit"
+                                class="btn footer-subscribe-btn"
+                            >
+                                Subscribe
+                            </button>
                         </form>
                     </div>
                 </div>
+
+                <div class="footer__contact">
+                    <a href="mailto:email@gmail.com" class="footer__link">
+                        email@gmail.com
+                    </a>
+                    <a href="tel:(123) 456-7890" class="footer__link">
+                        (123) 456-7890
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2020 Light Media All rights reserved.
+                </p>
             </div>
         </footer>
     </body>
