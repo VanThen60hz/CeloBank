@@ -379,13 +379,15 @@ button {
     /* Positioning */
     position: relative;
     z-index: 1;
+    font-size: 1rem;
+    /* 1 rem = 10px/
 
     /* Box model */
-    width: 250px;
-    height: 150px;
-    padding: 16px;
-    margin-top: 16px;
-    border-radius: 20px;
+    width: 25em;
+    height: 15em;
+    padding: 1.6em;
+    margin-top: 1.6em;
+    border-radius: 2em;
 
     /* Color */
     color: #fff;
@@ -409,7 +411,7 @@ button {
 
 .mobile-card__label {
     /* Text */
-    font-size: 1.4rem;
+    font-size: 1.4em;
     font-weight: 400;
 }
 
@@ -423,8 +425,8 @@ button {
 
 .mobile-card__circle {
     /* Box model */
-    width: 24px;
-    height: 24px;
+    width: 2.4em;
+    height: 2.4em;
     margin-left: -10px;
     border-radius: 50%;
 }
@@ -458,7 +460,7 @@ button {
     column-gap: 12px;
 
     /* Box model */
-    margin-top: 32px;
+    margin-top: 3.2em;
 }
 
 .mobile-card__title {
@@ -467,19 +469,26 @@ button {
 }
 
 .mobile-card__detail {
+    /* Box model */
     margin-top: 5px;
+}
+
+.mobile-card__decor {
+    /* Positioning */
+    position: absolute;
+
+    /* Box model */
+    width: 10.5em;
 }
 
 .mobile-card__decor:nth-of-type(1) {
     /* Positioning */
-    position: absolute;
     top: 0;
     left: 0;
 }
 
 .mobile-card__decor:nth-of-type(2) {
     /* Positioning */
-    position: absolute;
     bottom: 0;
     right: 0;
 }
@@ -501,13 +510,13 @@ button {
     color: var(--legend-color);
 
     /* Text */
-    font-size: 1.6rem;
+    font-size: 1.6em;
     font-weight: 600;
 }
 
 .transaction__list {
     /* Box model */
-    margin-top: 28px;
+    margin-top: 2.8em;
 }
 
 .transaction-item {
@@ -1025,15 +1034,19 @@ button {
 }
 
 .feature__card {
-    /* Scale */
-    transform: scale(1.928);
-    margin-left: 120px;
+    /* Positioning */
+    position: relative;
+
+    /* Box model */
+
+    /* Change font-size to modify size */
+    font-size: 1.928rem;
 }
 
 .feature-media-send-money {
     /* Positioning */
     position: absolute;
-    top: -95px;
+    top: -25px;
     right: 0;
     z-index: 1;
 
@@ -1124,7 +1137,7 @@ button {
 .feature-media-income {
     /* Positioning */
     position: absolute;
-    bottom: -120px;
+    bottom: -55px;
     right: 0;
     z-index: 1;
 
@@ -1292,8 +1305,8 @@ button {
 .payment-method__decor {
     /* Positioning */
     position: absolute;
-    right: 0;
-    bottom: 222px;
+    right: -26px;
+    top: -35px;
     z-index: 1;
 
     /* Box model */
