@@ -170,6 +170,36 @@
     .client-item__feedback-wrap {
         width: 100%;
     }
+
+    .blog {
+        margin: 30px 0 0 30px;
+    }
+
+    .blog__list {
+        grid-template-columns: auto;
+    }
+
+    .blog-item {
+        width: 100%;
+    }
+
+    .download__star-decor {
+        width: 60px;
+    }
+
+    .footer__top {
+        flex-wrap: wrap;
+        row-gap: 30px;
+        margin-left: 30px;
+    }
+
+    .footer__column:last-child {
+        width: 54%;
+    }
+
+    .footer__contact {
+        margin-left: 30px;
+    }
 }
 
 /* Tablet */
@@ -270,6 +300,80 @@
 
     .client__desc {
         width: 100%;
+    }
+
+    .blog {
+        margin-left: 0;
+    }
+
+    .blog-top {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .download__inner {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .download__label {
+        margin-top: 0;
+    }
+
+    .download__desc {
+        width: 80%;
+    }
+
+    .download-cta {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .download__star-decor:nth-of-type(1),
+    .download__star-decor:nth-of-type(2) {
+        top: 30px;
+    }
+
+    .download__star-decor:nth-of-type(3),
+    .download__star-decor:nth-of-type(4) {
+        bottom: 85px;
+    }
+
+    .download__star-decor:first-of-type,
+    .download__star-decor:nth-of-type(3) {
+        left: 30px;
+    }
+
+    .download__star-decor:nth-of-type(2),
+    .download__star-decor:nth-of-type(4) {
+        right: 30px;
+    }
+
+    .footer__top,
+    .footer__contact {
+        margin-left: 0;
+    }
+
+    .footer__column {
+        width: 100%;
+    }
+
+    .footer__column:last-child {
+        width: 100%;
+    }
+
+    .footer-subscribe-form {
+        column-gap: 30px;
+    }
+
+    .footer-subscribe-btn {
+        width: 200px;
+    }
+
+    .footer__contact {
+        column-gap: normal;
+        justify-content: space-between;
     }
 }
 
