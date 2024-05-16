@@ -231,8 +231,17 @@
         margin-left: 0;
     }
 
+    .subscribe-form__submit {
+        left: 0;
+        bottom: -100%;
+    }
+
     .works__inner {
         margin-left: 0;
+    }
+
+    .work__media {
+        margin-left: 30px;
     }
 
     .work__img-wrap {
@@ -367,8 +376,8 @@
         column-gap: 30px;
     }
 
-    .footer-subscribe-btn {
-        width: 200px;
+    .footer-subscribe__input {
+        width: 100%;
     }
 
     .footer__contact {

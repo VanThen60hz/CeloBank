@@ -74,6 +74,7 @@ button {
     width: 149px;
     height: var(--height);
     border-radius: 8px;
+    border-color: transparent;
 
     /* Color */
     color: #fff;
@@ -280,10 +281,12 @@ button {
 }
 
 .subscribe-form {
+    position: relative;
     /* Flex box */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     /* Box model */
     width: 540px;
@@ -318,11 +321,12 @@ button {
 }
 
 .subscribe-form__submit {
+    /* Positioning */
+    position: absolute;
+    right: 8px;
+
     /* Flex box */
     flex-shrink: 0;
-
-    /* Box model */
-    margin-right: 8px;
 
     /* Color */
     background: var(--primary-bg);
@@ -1564,6 +1568,10 @@ button {
     box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
 }
 
+.blog-item:hover .blog-item__cta {
+    color: #7264d6;
+}
+
 .blog-item__img {
     /* Box model */
     width: 160px;
@@ -1609,6 +1617,9 @@ button {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.63;
+
+    /* Transition */
+    transition: 0.5s ease;
 }
 
 /* ============= App  =============== */
@@ -1817,6 +1828,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
 }
 
 .footer-subscribe__input {
@@ -1900,4 +1913,31 @@ button {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
+}
+
+/* Validate form */
+
+form:has(:invalid) .submit-btn {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.form-group {
+    margin-top: 16px;
+}
+
+.form-group:has(:invalid:not(:placeholder-shown)) .error {
+    display: block;
+}
+
+.form-group .btn:hover {
+    opacity: 0.9;
+}
+
+.form-group .error {
+    margin: 10px 4px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: red;
+    display: none;
 }

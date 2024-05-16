@@ -127,7 +127,7 @@
                     </label>
 
                     <!-- Logo -->
-                    <a href="/" class="logo__link">
+                    <a href="./" class="logo__link">
                         <img
                             src="./assets/img/logo.png"
                             alt="CeloBank"
@@ -224,13 +224,15 @@
                             build websites and apps that accept payments and
                             send payouts globally. We are the best platform.
                         </p>
-                        <form action="#!" class="subscribe-form">
+                        <form action="#!" class="subscribe-form form-group">
                             <input
                                 type="email"
                                 name="email"
                                 id="email"
                                 placeholder="Your email address"
                                 class="subscribe-form__input"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                required
                             />
                             <button
                                 type="submit"
@@ -238,6 +240,9 @@
                             >
                                 Get Started
                             </button>
+                            <p class="error">
+                                Vui lòng nhập đúng định dạng email
+                            </p>
                         </form>
                         <p class="hero__commit">
                             *We&rsquo;ll respect the inbox and never share your
@@ -1353,20 +1358,28 @@
                             News letter
                         </h3>
 
-                        <form action="#!" class="footer-subscribe-form">
+                        <form
+                            action="#!"
+                            class="footer-subscribe-form form-group"
+                        >
                             <input
-                                type="address"
-                                name="address"
-                                id="address"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Your email address"
                                 class="footer-subscribe__input"
-                                placeholder="Enter address..."
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                required
                             />
                             <button
                                 type="submit"
                                 class="btn footer-subscribe-btn"
                             >
-                                Subscribe
+                                Get Started
                             </button>
+                            <p class="error">
+                                Vui lòng nhập đúng định dạng email
+                            </p>
                         </form>
                     </div>
                 </div>
